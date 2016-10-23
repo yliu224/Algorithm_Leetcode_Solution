@@ -1,6 +1,6 @@
-package com.company.Algorithm;
+package FIGHTING.Algorithm;
 
-import com.company.DataStructure.TreeNode;
+import FIGHTING.DataStructure.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;

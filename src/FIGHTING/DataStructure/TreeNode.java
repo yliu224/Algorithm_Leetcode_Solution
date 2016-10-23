@@ -1,4 +1,4 @@
-package com.company.DataStructure;
+package FIGHTING.DataStructure;
 
 /**
  * Created by dean on 10/14/2016.

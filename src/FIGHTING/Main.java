@@ -1,6 +1,6 @@
-package com.company;
+package FIGHTING;
 
-import com.company.Algorithm.Substring_of_Palindrome;
+import FIGHTING.Algorithm.Substring_of_Palindrome;
 
 public class Main {
 

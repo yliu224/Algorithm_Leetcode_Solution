@@ -1,4 +1,4 @@
-package com.company.Algorithm;
+package FIGHTING.Algorithm;
 
 /**
  * Created by dean on 9/27/2016.
