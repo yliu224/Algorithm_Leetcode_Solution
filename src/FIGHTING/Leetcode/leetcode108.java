@@ -6,8 +6,6 @@ import FIGHTING.DataStructure.TreeNode;
  * Created by yliu224 on 10/23/16.
  */
 public class leetcode108 {
-}
-class Solution {
     public TreeNode sortedArrayToBST(int[] nums) {
         return CreatTree(0,nums.length-1,nums);
     }
