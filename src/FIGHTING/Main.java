@@ -3,13 +3,17 @@ package FIGHTING;
 import FIGHTING.Algorithm.Substring_of_Palindrome;
 import FIGHTING.Leetcode.*;
 
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.List;
 import java.util.Stack;
 
 public class Main {
 
     public static void main(String[] args) {
-        leetcode394 s=new leetcode394();
-        s.decodeString("2[20[bc]31[xy]]xd4[rt]");
+
+        leetcode46 s=new leetcode46();
+        s.permute(BuildHelper.CreateIntArray("[1,2,3]"));
     }
 
 }
