@@ -12,8 +12,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        leetcode46 s=new leetcode46();
-        s.permute(BuildHelper.CreateIntArray("[1,2,3]"));
+        leetcode75 s=new leetcode75();
+        s.sortColors(BuildHelper.CreateIntArray("[1,1]"));
     }
 
 }
