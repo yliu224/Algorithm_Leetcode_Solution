@@ -1,4 +1,4 @@
-package FIGHTING.DP;
+package FIGHTING.Leetcode.DP;
 
 /**
  * Created by dean on 10/24/2016.

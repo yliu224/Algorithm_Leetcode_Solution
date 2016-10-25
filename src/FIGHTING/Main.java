@@ -1,19 +1,13 @@
 package FIGHTING;
 
-import FIGHTING.Algorithm.Substring_of_Palindrome;
-import FIGHTING.Leetcode.*;
-
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.List;
-import java.util.Stack;
+import FIGHTING.Leetcode.Backtracking.leetcode89;
+import FIGHTING.Leetcode.LinkList.leetcode2;
 
 public class Main {
 
     public static void main(String[] args) {
-
-        leetcode75 s=new leetcode75();
-        s.sortColors(BuildHelper.CreateIntArray("[1,1]"));
+        leetcode2 s=new leetcode2();
+        s.addTwoNumbers(BuildHelper.CreateListNode("[2,4,3]"),BuildHelper.CreateListNode("[5,6,4]"));
     }
 
 }

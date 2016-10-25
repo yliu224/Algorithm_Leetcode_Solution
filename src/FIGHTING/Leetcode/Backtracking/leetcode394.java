@@ -1,4 +1,4 @@
-package FIGHTING.Leetcode;
+package FIGHTING.Leetcode.Backtracking;
 
 import java.util.Stack;
 

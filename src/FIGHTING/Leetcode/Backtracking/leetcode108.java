@@ -1,4 +1,4 @@
-package FIGHTING.Leetcode;
+package FIGHTING.Leetcode.Backtracking;
 
 import FIGHTING.DataStructure.TreeNode;
 
