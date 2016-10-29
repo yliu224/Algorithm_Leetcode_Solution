@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
         leetcode153 s=new leetcode153();
-        s.findMin(BuildHelper.CreateIntArray("[4,5,6,7,0]"));
+        s.findMin(BuildHelper.CreateIntArray("[3,1,2]"));
     }
 
 }
