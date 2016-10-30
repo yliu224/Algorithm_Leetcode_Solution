@@ -12,7 +12,8 @@ import java.util.regex.Pattern;
  * Created by dean on 10/14/2016.
  */
 public class BuildHelper {
-    private static final String REGEX_INTEGERS="(\\d+)[,\\]]";
+    private static final String REGEX_INTEGERS="(\\d+)";
+    //private static final String REGEX_MATRIX="[([(\\d+),*]),*]";
     public static TreeNode CreateTreeNode(String s){
         return null;
     }
@@ -28,10 +29,33 @@ public class BuildHelper {
         Matcher m=p.matcher(s);
         while(m.find()){
             l.add(Integer.parseInt(m.group(1)));
+            //System.out.println(m.group(1));
         }
         int[] output=new int[l.size()];
         for(int i=0;i<l.size();i++){
             output[i]=l.get(i);
+        }
+        return output;
+    }
+    public static int[][] CreateIntMatrix(String s){
+        s=s.trim();
+        s=s.substring(1,s.length());
+        String[] sl=s.split("\\],\\[");
+        List<List<Integer>> ll=new ArrayList<>();
+        Pattern p=Pattern.compile(REGEX_INTEGERS);
+        for(String nums:sl){
+            List<Integer> numsl=new ArrayList<>();
+            Matcher m=p.matcher(nums);
+            while (m.find()){
+                numsl.add(Integer.parseInt(m.group(1)));
+            }
+            ll.add(numsl);
+        }
+        int[][] output=new int[ll.size()][ll.get(0).size()];
+        for(int i=0;i<output.length;i++){
+            for(int j=0;j<output[0].length;j++){
+                output[i][j]=ll.get(i).get(j);
+            }
         }
         return output;
     }
