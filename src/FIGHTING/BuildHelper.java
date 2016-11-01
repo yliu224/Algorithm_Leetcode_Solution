@@ -12,7 +12,7 @@ import java.util.regex.Pattern;
  * Created by dean on 10/14/2016.
  */
 public class BuildHelper {
-    private static final String REGEX_INTEGERS="(\\d+)";
+    private static final String REGEX_INTEGERS="([\\+\\-]{0,1}\\d+)";
     //private static final String REGEX_MATRIX="[([(\\d+),*]),*]";
     public static TreeNode CreateTreeNode(String s){
         return null;
