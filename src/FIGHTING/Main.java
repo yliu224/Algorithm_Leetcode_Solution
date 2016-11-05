@@ -1,12 +1,13 @@
 package FIGHTING;
 
 import FIGHTING.Leetcode.Backtracking.*;
+import FIGHTING.Leetcode.BinarySearch.leetcode367;
 
 public class Main {
 
     public static void main(String[] args) {
-        leetcode18unfinished s=new leetcode18unfinished();
-        s.fourSum(BuildHelper.CreateIntArray("[1,0,-1,0,-2,2]"),0);
+        leetcode367 s=new leetcode367();
+        s.isPerfectSquare(808201);
     }
 
 }
