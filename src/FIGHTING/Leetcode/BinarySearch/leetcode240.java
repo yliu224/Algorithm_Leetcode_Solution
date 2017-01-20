@@ -5,29 +5,14 @@ package FIGHTING.Leetcode.BinarySearch;
  */
 public class leetcode240 {
     public boolean searchMatrix(int[][] matrix, int target) {
-
-        for(int i=0;i<matrix.length;i++){
-            if(binarySearch(matrix[i],target)) return true;
+        if (matrix == null || matrix.length == 0) return false;
+        int m = matrix.length, n = matrix[0].length;
+        int i = 0, j = n - 1;
+        while (i < m && j >= 0) {
+            if (matrix[i][j] == target) return true;
+            else if (matrix[i][j] > target) j--;
+            else i++;
         }
         return false;
-    }
-
-    public boolean binarySearch(int[] matrix,int target){
-        int l=0,r=matrix.length-1;
-        int m;
-        while(l<r){
-            m=(l+r)/2;
-            if(matrix[m]>target){
-                r=m-1;
-            }
-            else if(matrix[m]<target){
-                l=m+1;
-            }
-            else{
-                return true;
-            }
-        }
-        if(matrix[l]==target) return true;
-        else return false;
     }
 }
